@@ -125,7 +125,9 @@ namespace infinit
       operator ==(PublicKey const& other) const;
       elle::Boolean
       operator <(PublicKey const& other) const;
-      ELLE_OPERATOR_NO_ASSIGNMENT(PublicKey);
+
+      PublicKey& operator=(const PublicKey&) = delete;
+      PublicKey& operator=(PublicKey&&) = default;
 
     /*-----------.
     | Printable |
