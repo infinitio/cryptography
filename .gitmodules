@@ -1,3 +1,3 @@
 [submodule "modules/dopenssl"]
 	path = modules/dopenssl
-	url = https://github.com/infinitdotio/dopenssl.git
+	url = ../dopenssl.git
